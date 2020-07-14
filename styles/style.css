@@ -3,58 +3,78 @@
     padding: 0;
 }
 
+.app {
+	width: 100vmin;
+	margin: auto;
+	text-align: center;
+}
+
 p {
-	margin: 10px;
-	width: 280px;
+	margin: auto;
+	width: 90vmin;
 	text-align: justify;
+	font-size: 1.5rem;
 }
 
 form{
-	margin: 10px;
+	width: 90vmin;
+    margin: 5vmin auto 2.5vmin;
+	font-size: 1.5rem;
+	
+    display: grid;
+    grid-template-columns: [labels] auto [controls] 1fr;
+    gap: 10px;
+}
+
+label {
+	grid-column: labels;
+	grid-row: auto;
+
+    height: 1.4em;
+}
+
+input, select {
+	grid-column: controls;
+	grid-row: auto;
+
+	font-size: 1.1rem;
 }
 
 button{
-	margin-top: 5px;
-	height: 25px;
-    width: 173px;
-    font-weight: 600;
+	grid-column: span 2;
+
+    height: 10vmin;
+    font-size: 5vmin;
+    border-radius: 10px;
 }
 
 strong {
 	font-size: 1.3em;
 }
 
-label {
-	display: inline-block;
-	width: 65px;
-    height: 1.4em;
-}
-
-#count {
-	width: 99px;
-}
-
-#doorsNum {
-	width: 103px;
-}
-
 .desc {
-	margin: 0px 10px;
+	width: 90vmin;
+	margin: auto;
 }
 
 #result {
-	margin: 10px;
+	width: 90vmin;
+    margin: 2.5vmin auto 2.5vmin;
 	font-weight: bold;
 	font-size: 1.3em;
 }
 
 #output {
-	margin: 10px;
+	width: 90vmin;
+    margin: 2.5vmin auto 2.5vmin;
 }
 
 .doors {
 	display: flex;
-	width: 280px;
+	justify-content: center;
+	
+    width: 90vmin;
+    margin: auto;
 }
 
 .door {
